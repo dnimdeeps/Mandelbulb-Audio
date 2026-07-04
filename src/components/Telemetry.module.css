@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.title {
+  font-family: var(--font-data);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.status {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: #00ff66; /* Specific green for active status */
+  animation: pulse 2s infinite;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 4px;
+}
+
+.label {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.value {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.blockTitle {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: var(--text-primary);
+}
+
+.blockDesc {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}

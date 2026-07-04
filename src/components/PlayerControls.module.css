@@ -1,0 +1,111 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.fileName {
+  font-family: var(--font-data);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.seekRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.time {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: var(--text-muted);
+  min-width: 40px;
+}
+
+.seekTrack {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  cursor: pointer;
+  position: relative;
+}
+
+.seekFill {
+  height: 100%;
+  background: var(--text-primary);
+  transition: width 0.1s linear;
+}
+
+.seekThumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 12px;
+  background: var(--accent);
+  pointer-events: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playBtn {
+  width: 48px;
+  height: 48px;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.playBtn:hover {
+  background: var(--text-primary);
+  color: var(--bg);
+  border-color: var(--text-primary);
+}
+
+.playBtn:active {
+  transform: scale(0.98);
+}
+
+.volumeGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  width: 120px;
+}
+
+.volSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+
+.volSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 12px;
+  background: var(--text-primary);
+  cursor: pointer;
+}
