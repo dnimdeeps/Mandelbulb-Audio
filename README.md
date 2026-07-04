@@ -4,6 +4,13 @@
 
 ---
 
+## 🌌 Mandelbulb-Audio
+
+**[✨ LIVE DEMO: Experience the Fractal Universe Here ✨](https://mandelbulb-audio.vercel.app/)**
+
+---
+
+
 ## What Is This?
 
 Mandelbulb-Audio is not a visualizer in the traditional sense. It does not react to audio in a generic, pre-scripted way. Instead, it uses the **binary SHA-256 hash of your audio file** as a deterministic seed to permanently lock a specific topological structure — a unique shape that exists only for that file. Then, during playback, **real-time Fourier transforms physically manipulate the 3D coordinate space** of that structure, making the fractal breathe, pulse, and evolve with the actual physics of the music.
@@ -160,29 +167,6 @@ npm run build
 ```
 
 The output will be in the `dist/` folder, ready to deploy to any static host.
-
----
-
-## Deployment (Vercel)
-
-This project is optimized for zero-configuration deployment on Vercel.
-
-### Option 1: Vercel CLI
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy (from the project directory)
-vercel
-```
-
-Follow the prompts, accept all defaults. Vercel auto-detects Vite.
-
-### Option 2: GitHub Integration
-1. Push this repository to GitHub.
-2. Log in to [vercel.com](https://vercel.com) and click **"Add New Project"**.
-3. Import your GitHub repository.
-4. Click **Deploy**. No configuration needed.
 
 ---
 
